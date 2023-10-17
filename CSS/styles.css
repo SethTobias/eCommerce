@@ -1,0 +1,46 @@
+/* Custom Properties */
+:root{
+    --colorName: ;
+    --colorName: ;
+    --colorName: ;
+    --colorName: ;
+}
+
+/* Finding Color Pallate
+main
+#3d5a80
+#98c1d9
+#e0fbfc
+#ee6c4d
+#293241
+
+
+pastel green #CAFFBF
+dark blue #023E8A
+
+
+consider
+deep teal #19747E
+pastel pink #FFADAD  
+light blue #90E0EF
+
+furure
+pale blue #CAF0F8
+soft mint green #D1E8E2
+light sky blue #A9D6E5 
+light gray #E2E2E2
+*/
+
+.navBar{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.navBar a{
+    margin: 0px 20px;
+}
+
+.linksImg{
+    height: 120px;
+    margin: auto;
+}
