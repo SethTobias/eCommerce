@@ -32,6 +32,7 @@ light sky blue #A9D6E5
 light gray #E2E2E2
 */
 
+/* General */
 .navBar{
     text-align: center;
     background-color: var(--sub-color2);
@@ -45,3 +46,13 @@ light gray #E2E2E2
     height: 120px;
     margin: auto;
 }
+/* Index */
+
+/* About */
+
+/* Product */
+
+/* Admin */
+
+/* Contact */
+
