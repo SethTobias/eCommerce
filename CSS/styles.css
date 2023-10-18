@@ -33,6 +33,9 @@ light gray #E2E2E2
 */
 
 /* General */
+* {
+    color: #e0fbfc;
+}
 .navBar{
     text-align: center;
     background-color: var(--sub-color2);
@@ -46,7 +49,57 @@ light gray #E2E2E2
     height: 120px;
     margin: auto;
 }
+
+
+
+body{
+    background-color: var(--secondary-color);
+}
+
+.sethTobias{
+
+}
 /* Index */
+.gridDisplay  {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:  70% 20% 10%;
+}
+
+.d1 {
+    grid-row: 1;
+    text-align: center;
+}
+
+.d1 p {
+    margin: auto;
+    font-size: 22px;
+}
+
+.heading {
+    text-decoration: underline;
+}
+
+.indexContent {
+    height: 22%;
+    width: 22%;
+    background-color: #3d5a80;
+    border: #e0fbfc 8px double;
+}
+.navIndex {
+    grid-row: 2;
+    text-align: center;
+}
+
+.indexHover {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.d2 {
+    grid-row: 3;
+}
 
 /* About */
 
