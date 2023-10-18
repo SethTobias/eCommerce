@@ -1,9 +1,13 @@
 /* Custom Properties */
 :root{
-    --colorName: ;
-    --colorName: ;
-    --colorName: ;
-    --colorName: ;
+    --primary-color: #3d5a80;
+    --secondary-color: #98c1d9;
+    --tertiary-color: #e0fbfc;
+    --sub-color1: #ee6c4d;
+    --sub-color2: #293241;
+    --sub-color3: #CAFFBF;
+    --sub-color4: #023E8A;
+
 }
 
 /* Finding Color Pallate
@@ -13,11 +17,8 @@ main
 #e0fbfc
 #ee6c4d
 #293241
-
-
 pastel green #CAFFBF
 dark blue #023E8A
-
 
 consider
 deep teal #19747E
@@ -33,11 +34,11 @@ light gray #E2E2E2
 
 .navBar{
     text-align: center;
-    vertical-align: middle;
+    background-color: var(--sub-color2);
 }
 
 .navBar a{
-    margin: 0px 20px;
+    margin: 0px 100px;
 }
 
 .linksImg{
