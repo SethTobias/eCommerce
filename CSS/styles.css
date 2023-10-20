@@ -39,6 +39,8 @@ light gray #E2E2E2
 .navBar{
     text-align: center;
     background-color: var(--sub-color2);
+    border: var(--secondary-color) double 5px;
+
 }
 
 .navBar a{
@@ -50,15 +52,52 @@ light gray #E2E2E2
     margin: auto;
 }
 
-
+.navBar-2 a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 30px;
+}
 
 body{
     background-color: var(--secondary-color);
 }
 
-.sethTobias{
-
+@media screen and (min-width: 300px) {
+    
+    body {
+        background-color: var(--sub-color2);
+    }
 }
+
+@media screen and (min-width: 720px) {
+    
+    body {
+        background-color: var(--sub-color3);
+    }
+}
+
+@media screen and (max-width: 1080px) {
+
+    body {
+        background-color: var(--secondary-color);
+    }
+}
+
+.sethTobias{
+    animation: br
+    margin: auto;
+    display: flexbox;
+    justify-content: center;
+    border: var(--sub-color1) double 12px;
+}
+
+@keyframes br {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(5px, 5px) rotate(5deg); }
+    50% { transform: translate(0, 0) rotate(0eg); }
+    75% { transform: translate(-5px, 5px) rotate(-5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+  }
 /* Index */
 .gridDisplay  {
     display: grid;
@@ -84,27 +123,179 @@ body{
     height: 22%;
     width: 22%;
     background-color: #3d5a80;
-    border: #e0fbfc 8px double;
+    border: var(--secondary-color) 8px double;
 }
 .navIndex {
     grid-row: 2;
     text-align: center;
 }
 
-.indexHover {
+.navIndex a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.navIndex {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
 }
 
-.d2 {
-    grid-row: 3;
+.colum1 {
+    grid-column: 1;
 }
 
-/* About */
+.colum2 {
+    grid-column: 2;
+}
 
+.colum3 {
+    grid-column: 3;
+}
+
+.colum4 {
+    grid-column: 4;
+}
+
+.colum5 {
+    grid-column: 5;
+}
+
+.d2 {
+    grid-row: 3;
+    background-color: var(--sub-color2);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    border: var(--secondary-color) double 5px;
+}
+
+.hideImg1, .hideImg2, .hideImg3, .hideImg4, .hideImg5 {
+    display: none;
+    width: 60%;
+    border: var(--sub-color2);
+}
+
+.colum1:hover + .hideImg1{
+    display: block;
+}
+/* About */
+.contentAbout {
+    height: 22%;
+    width: 40%;
+    background-color: #3d5a80;
+    border: var(--secondary-color) 8px double;
+}
+
+.e-commerce {
+    animation: ecom 5s ease 0s infinite alternate-reverse forwards;
+    background-color: var(--primary-color);
+    border: var(--secondary-color) double 5px;
+    width: 50%;
+}
+
+@keyframes ecom {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.2;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
 /* Product */
+h1 {
+    text-align: center;
+}
+
+.gridProduct {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+}
+
+.gridProduct .contentProduct {
+    grid-row: 1;
+    grid-column: span 3;
+    align-content: center;
+    text-align: center;
+    height: fit-content;
+    width: 45%;
+    background-color: var(--primary-color);
+    border: var(--secondary-color) double 5px;
+    font: 300 small-caps;
+    font-size: 30px;
+    margin: auto;
+}
+
+.pro1 {
+    grid-column: 1;
+    grid-row: 2;
+    margin: auto;
+}
+
+.pro2 {
+    grid-column: 2;
+    grid-row: 2;
+    margin: auto;
+}
+
+.pro3 {
+    grid-column: 3;
+    grid-row: 2;
+    margin: auto;
+}
+
+.pro4 {
+    grid-column: 1;
+    grid-row: 3;
+    margin: auto;
+}
+
+.pro5 {
+    grid-column: 2;
+    grid-row: 3;
+    margin: auto;
+}
+
+.pro6 {
+    grid-column: 3;
+    grid-row: 3;
+    margin: auto;
+}
+
+.imgProduct {
+    width: 60%;
+    height: 60%;
+    border-radius: 100%;
+}
+
+.p1 {
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+}
 
 /* Admin */
 
 /* Contact */
+.formGrid {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: var(--sub-color3);
+    width: 35%;
+    color: var(--sub-color2);
+    border: var(--sub-color4) double 12px;
+}
+
+.formGrid label,p,a {
+    color: var(--sub-color4);
+}
